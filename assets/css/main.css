@@ -30,7 +30,7 @@
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #45505b;  /* The default color of the main navmenu links */
-  --nav-hover-color: #0563bb; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-hover-color: #020b13; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
@@ -350,6 +350,55 @@ h6 {
   align-items: center;
   justify-content: center;
   background-color: lightblue; /* Optional: for visualization */
+}
+
+.cta-button {
+  display: inline-block;
+  position: relative;
+  padding: 0.35rem 1.2rem;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: border-radius 0.16s ease-out;
+}
+.cta-button:hover {
+  border-radius: 0px;
+}
+.cta-button-content {
+  display: inline-block;
+  position: relative;
+  transition: transform 0.16s ease-out;
+}
+.cta-button:hover .cta-button-content {
+  transform: translateX(10px);
+}
+.arrow-text {
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  color: white;
+}
+.arrow {
+display: inline-block;
+position: absolute;
+color: white;
+opacity: 0;
+inset: 50% auto auto -23px;
+-webkit-translate: 0 -50%;
+-moz-translate: 0 -50%;
+-ms-translate: 0 -50%;
+translate: 0 -50%;
+size: 19px;
+transition: opacity 0.16s ease-out;
+}
+.cta-button:hover .arrow {
+opacity: 1;
 }
 
 /*--------------------------------------------------------------
