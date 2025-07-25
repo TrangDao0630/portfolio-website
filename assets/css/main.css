@@ -1104,7 +1104,7 @@ opacity: 1;
   position: relative;
   float: left;
   margin: 10px;
-  background: linear-gradient(to bottom,#d3bb95,#ffc64c);
+  background: linear-gradient(to bottom,#ffc64c,#e4cba2);
 }
 
 .portfolio-container {
@@ -1128,11 +1128,11 @@ opacity: 1;
 }
 
 .portfolio-detail p {
-  color: #292929;
+  color: #552222;
 }
 
 .portoflio-link {
-  font-size: 40px;
+  font-size: 22px;
   color: rgb(48, 48, 48);
   font-family: var(--heading-font);
   text-align: center;
